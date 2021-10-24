@@ -1,0 +1,764 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <h3>Main Page</h3>
+    <hr>
+    <body>
+
+
+
+
+    <ul class="languagelist d-none">
+            <li class="selected tr">
+                <a rel="nofollow" href="/common/SetLanguageJson?langid=2" title="TR">
+                    TR
+                </a>
+            </li>
+            <li class=" en">
+                <a rel="nofollow" href="/common/SetLanguageJson?langid=1" title="EN">
+                    EN
+                </a>
+            </li>
+    </ul>
+</div>
+
+<script>
+    document.querySelector(".languagelist li.selected a").setAttribute("href", "javascript:;"); /*mobil cihazlar için dil seçimi*/
+
+    const btns = document.querySelectorAll(".languagelist a");
+
+    btns.forEach(btn => {
+        btn.addEventListener('click', selectLang);
+    });
+
+    function selectLang(e) {
+        if (!e.target.parentNode.classList.contains("selected")) {
+            axios.get(e.target.attributes.href.value)
+                .then(function (response) {
+                    location.reload();
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+                .then(function () {
+                    // always executed
+                });
+
+            return false;
+        }
+    }
+
+    document.querySelector(".selected-lang").innerHTML = document.querySelector(".languagelist li.selected a").textContent;
+
+
+</script>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="header-mobile-overlay"></div>
+<!--EndDonut-->
+                    </div>
+                    <!-- customer links -->
+                </div>
+            </div>
+        </header>
+
+
+
+
+        <div class="main-site-body-container">
+            
+
+
+
+    <style>
+        #instafeed-container img {
+            height: 200px;
+            max-width: 200px;
+            border-radius: 50%;
+        }
+        #instafeed-container {
+            width: 94%;
+            margin-left: 3%;
+        }
+        @media(max-width:920px) {
+            #instafeed-container img {
+                height: 140px;
+                max-width: 140px;
+                border-radius: 50%;
+            }
+
+            #instafeed-container .owl-prev {
+                top: 12% !important;
+                margin-left: -21px !important;
+            }
+
+            #instafeed-container .owl-next {
+                top: 12% !important;
+                right: -13px !important;
+            }
+
+            #instafeed-container .owl-prev svg {
+                width: 20px;
+            }
+
+            #instafeed-container .owl-next svg {
+                width: 20px;
+            }
+            #instafeed-container {
+                width: 95%;
+                margin-left: 5%;
+            }
+        }
+
+        #instafeed-container .owl-prev {
+            width: 15px;
+            height: 100px;
+            position: absolute;
+            top: 22%;
+            margin-left: -30px;
+            display: block !important;
+            border: 0px solid black !important;
+            color: #000 !important;
+            transform: rotate(180deg);
+            outline: none;
+        }
+
+        #instafeed-container .owl-next {
+            width: 15px;
+            height: 100px;
+            position: absolute;
+            top: 22%;
+            right: -30px;
+            display: block !important;
+            border: 0px solid black !important;
+            color: #000 !important;
+            outline: none;
+        }
+    </style>
+    <div class="container-fluid mb-0 mb-md-3">
+        
+        
+
+
+
+
+    <div class="row p-0">
+        <div class="col-12 p-md-0">
+            <div id="HomePageBannerSlider" class="HomePageBannerSlider">
+                        
+                            <div class="item">
+                                    <a href="https://www.colins.com.tr/c/tum-jean-modelleri-385?specs=96" title="jeans fest başladı" class="track-link" data-category="HomepageBanner" data-label="37" >
+                                        <img class="img-fluid w-100" src=" https://i.hizliresim.com/h0c5cnu.jpg" alt="jeans fest başladı"  />
+                                    </a>
+                            </div>                         
+                        
+                        
+                            <div class="item">
+                                    <a href="https://www.colins.com.tr/ecologic-jeans" title="Ecologic Jeans" class="track-link" data-category="HomepageBanner" data-label="37" >
+                                        <img class="img-fluid w-100" src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/jeans_fest_balad_148504.jpeg" alt="Ecologic Jeans"  />
+                                    </a>
+                            </div>
+                        
+
+            </div>
+            
+        </div>
+    </div>
+
+    </div>
+
+    <div class="container mb-2">
+        
+        
+
+
+
+    <div class="row">
+        <div class="col-12">
+            <a href="https://www.colins.com.tr/yeni-urunler?specs=4" >
+                <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149082.jpeg" class="img-fluid w-100" alt="Yeni Sezon" />
+            </a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="container mb-2">
+        
+        
+
+
+
+
+    </div>
+
+    <div class="container mb-2">
+        
+        
+
+
+
+    <div class="row" id="three-boxes-desktop">
+                <div class="col-4 my-2">
+                        <a href="https://www.colins.com.tr/c/tum-jean-modelleri-385?specs=74,96" aria-label="Kadın Jean">
+                            <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149062.jpeg" class="img-fluid w-100" alt="" />
+                        </a>
+                </div>
+                <div class="col-4 my-2">
+                        <a href="https://www.colins.com.tr/c/tum-jeanler-385?specs=141" aria-label="Jean Ceket">
+                            <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149070.jpeg" class="img-fluid w-100" alt="" />
+                        </a>
+                </div>
+                <div class="col-4 my-2">
+                        <a href="https://www.colins.com.tr/c/erkek-jeann-56?specs=96" aria-label="Erkek Mont">
+                            <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149076.jpeg" class="img-fluid w-100" alt="" />
+                        </a>
+                </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="container mb-2">
+        
+        
+
+
+
+    <div class="row HomepageTwoComponentBannerSecond">
+            <div class="col-6 col-lg-6 my-2 ">
+                    <a href="https://www.colins.com.tr/c/tum-urunler-1?specs=140" >
+                        <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149093.jpeg" class="img-fluid w-100" alt="Eşofman Altı"  />
+                    </a>
+            </div>
+            <div class="col-6 col-lg-6 my-2 ">
+                    <a href="https://www.colins.com.tr/c/aksesuar-465" >
+                        <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149103.jpeg" class="img-fluid w-100" alt=""  />
+                    </a>
+            </div>
+    </div>
+
+    </div>
+
+    <div class="container mb-2">
+        
+        
+
+
+
+    <div class="row">
+        <div class="col-12">
+            <a href="https://www.colins.com.tr/c/tum-urunler-1?specs=142" >
+                <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149088.jpeg" class="img-fluid w-100" alt="" />
+            </a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="container mb-2">
+        
+        
+
+
+
+
+    </div>
+
+    <div class="container mb-2">
+        
+        
+
+
+
+    <div class="row" id="three-boxes-desktop">
+                <div class="col-4 my-2">
+                        <a href="https://www.colins.com.tr/c/tum-urunler-1?specs=135" aria-label="Zamansız tiş&#246;rt modelleri">
+                            <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149106.jpeg" class="img-fluid w-100" alt="" />
+                        </a>
+                </div>
+                <div class="col-4 my-2">
+                        <a href="https://www.colins.com.tr/c/tum-urunler-1?specs=138" aria-label="Sweatshirt">
+                            <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149109.jpeg" class="img-fluid w-100" alt="" />
+                        </a>
+                </div>
+                <div class="col-4 my-2">
+                        <a href="https://www.colins.com.tr/c/tum-urunler-1?specs=17266,17265" aria-label="G&#246;mlek">
+                            <img src="https://img-colinstr.mncdn.com/Assets/Branch/Thumbs/149112.jpeg" class="img-fluid w-100" alt="" />
+                        </a>
+                </div>
+    </div>
+
+
+
+    </div>
+    <div class="container mb-2">
+        
+        
+
+
+
+
+    </div>
+
+<div class="container-fluid home home-index home-column-container">
+    
+    
+    
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<div class="container">
+    <div id="instafeed-container" class="slider-component mt-4 owl-carousel owl-theme"></div>
+    <div class="text-center mb-4"><i class="fab fa-instagram"></i> Takip Et: <a class="text-decoration-none text-danger" target="_blank" href="https://www.instagram.com/colins/">@Colins</a></div>
+
+    <script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+        resolution: 'low_resolution',
+        template: '<a class="item" href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>',
+        accessToken: 'IGQVJWSzhjWEg5akk5YVlkRmtCZAHZAnZADUxRzhRckpuUktRcGZAFQ09PcmlaWGZAVSzY0RFE5eklpYnlwU29SSzUxdlBpcDRzdXZAQNTRCd3VTOGZA0VkY5ZAnR2UzV2UmozNVRUMlM1U1dmeV9DajI0QlpSaQZDZD'
+	});
+    userFeed.run();
+    setTimeout(function () {
+        $('.slider-component').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoWidth: true,
+            autoplay: true,
+            navText: ['<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.4 490.4" xml:space="preserve" width="30px" height="30px" fill="#000000" stroke="#000000" stroke-width="0"><path d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5 c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"></path> <path d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9 c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3 C126.4,252.1,131.9,257.5,138.7,257.5z"></path> </svg>', '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.4 490.4" xml:space="preserve" width="30px" height="30px" fill="#000000" stroke="#000000" stroke-width="0"><path d="M245.2,490.4c135.2,0,245.2-110,245.2-245.2S380.4,0,245.2,0S0,110,0,245.2S110,490.4,245.2,490.4z M245.2,24.5 c121.7,0,220.7,99,220.7,220.7s-99,220.7-220.7,220.7s-220.7-99-220.7-220.7S123.5,24.5,245.2,24.5z"></path> <path d="M138.7,257.5h183.4l-48,48c-4.8,4.8-4.8,12.5,0,17.3c2.4,2.4,5.5,3.6,8.7,3.6s6.3-1.2,8.7-3.6l68.9-68.9 c4.8-4.8,4.8-12.5,0-17.3l-68.9-68.9c-4.8-4.8-12.5-4.8-17.3,0s-4.8,12.5,0,17.3l48,48H138.7c-6.8,0-12.3,5.5-12.3,12.3 C126.4,252.1,131.9,257.5,138.7,257.5z"></path> </svg>']
+        });
+    }, 3000);
+    </script>
+</div>
+
+
+
+
+
+    
+    
+</div>
+
+<!--Home Page Scripts-->
+<script async src="/Themes/Branch/Content/libs/tiny-slider/tiny-slider.js"></script>
+<link rel="stylesheet" href="/Themes/Branch/Content/libs/tiny-slider/tiny-slider.css">
+
+<script src="/Themes/Branch/Content/js/InstagramFeed.min.js"></script>
+<script src="/Themes/Branch/Content/js/instafeed-custom.js"></script>
+
+        </div>
+
+        <footer class="footer-main-container">
+            
+
+
+<div class="footer-main-container-top p-0 pb-lg-4 px-lg-4">
+    <div class="container footer-container">
+        <div class="row">
+            
+            <div class="col-12 col-lg-4 footer-section footer-section-1 mobile-border p-0">
+
+
+    <div class="footer-category">
+        
+        <div class="mobile-footer">
+            <ul class="list-group list-group-flush footer-link-group">
+                    <li class="list-group-item">
+                        <a href="/t/hakkimizda" >
+                            Hakkımızda
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/politikalarımız" >
+                            Politikalarımız
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/kariyer" >
+                            Kariyer
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://e-sirket.mkk.com.tr/esir/Dashboard.jsp#/sirketbilgileri/11106" >
+                            Bilgi Toplumu Hizmetleri
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/gizlilikveguvenlik" >
+                            Gizlilik ve Güvenlik
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/kvkk" >
+                            KVKK Aydınlatma Metni
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+            </div>
+            <div class="mcol-12 col-lg-4 footer-section footer-section-2 mobile-border p-0">
+
+
+    <div class="footer-category">
+        
+        <div class="mobile-footer">
+            <ul class="list-group list-group-flush footer-link-group">
+                    <li class="list-group-item">
+                        <a href="/t/iadevedegisimler" >
+                            İade ve Değişimler
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/uyelik-islemleri" >
+                            Üyelik İşlemleri
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/odemeler" >
+                            Ödemeler
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/siparis-islemleri" >
+                            Sipariş İşlemleri
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/kargo-teslimat" >
+                            Kargo ve Teslimat
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/loyalty" >
+                            Puan Sorgulama
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/ContactUs" >
+                            Bize Ulaşın
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/t/jeans_fest_2021" >
+                            JeansFest Kampanya Koşulları 
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+
+            </div>
+            <div class="col-12 col-lg-4 footer-section footer-section-3 mobile-border p-0">
+                
+
+<div class="newsletter-contianer">
+    
+    <div id="pnl-newsletter-result" class="text-white mt-2 mb-3"></div>
+
+    <div id="subscribe-loading-progress" style="display: none;" class="text-white">
+        Lütfen bekleyiniz...
+        <img src='/Themes/Branch/Content/images/ajax_loader_small.gif' alt="Lütfen bekleyiniz..." />
+    </div>
+
+        
+
+</div>
+
+<script async src="/Themes/Branch/Content/libs/axios/axios.min.js"></script>
+
+<script>
+    var newsletterURL = '/Newsletter/SubscribeNewsletter';
+    var newsletterInputSelector = ".newsletter-contianer #NewsletterEmail";
+</script>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-block d-lg-none d-md-none d-xl-none mobile-copyright p-3 p-lg-0 p-md-0 p-xl-0">
+        <p class="copyright-text-mobile">
+            Copyright &copy; 2021 COLIN'S. Tüm hakları saklıdır.
+        </p>
+    </div>
+</div>
+
+<div class="footer-main-container-bottom m-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 text-center text-lg-left text-md-left  d-none d-xl-block d-lg-block d-md-block d-sm-none mb-0">
+                        <p class="copyright-text">
+                            Copyright &copy; 2021 COLIN'S. Tüm hakları saklıdır.
+                        </p>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="cookies-container">
+    <div class="row">
+        <div class="col-12 position-relative">
+            <p class="m-0 text-center p-2">
+                
+                <a href="/t/gizlilikveguvenlik" class="cookie-popup" target="_blank">
+                    <span class="cookie-text">
+                        Gizlilik ve Çerez Politikası
+                    </span>
+                </a>
+                <span class="static-text cookie-text">
+                    sayfamızdan erişebilirsiniz.
+                </span>
+                <a href="javascript:;" class="cookie-accept-wrapper">
+                    <span class="cookie-text cookie-accept"> Onayla</span>
+                </a>
+            </p>
+            <div class="cookie-close position-absolute">x</div>
+        </div>
+    </div>
+</div>
+<script>
+    if (getCookie('CookiePolicyCookie') != '') {
+        if (document.querySelectorAll('.cookies-container')[0] != undefined) {
+            document.querySelectorAll('.cookies-container')[0].remove()
+        }
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function cookieRequest() {
+        document.querySelectorAll('.cookies-container')[0].remove();
+        setCookie("CookiePolicyCookie", "CookiePolicyCookieVal", 360);
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        if (getCookie('CookiePolicyCookie') != '') {
+            if (document.querySelectorAll('.cookies-container')[0] != undefined) {
+                document.querySelectorAll('.cookies-container')[0].remove()
+            }
+        }
+
+        var closeBtn = document.getElementsByClassName("cookie-close")[0];
+        var closeAcceptBtn = document.getElementsByClassName("cookie-accept")[0];
+
+        if (closeBtn != undefined) {
+            closeBtn.addEventListener("click", cookieRequest);
+            closeAcceptBtn.addEventListener("click", cookieRequest);
+        }
+
+
+
+    });
+
+</script>
+        </footer>
+
+    </div>
+
+    
+
+
+<script src="/Content/bundled.min.js?v=20211020030106" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+
+        <script>
+        //$(document).ready(function () {
+        //    var admitad_uid = getUrlParameter('admitad_uid');
+        //    if (admitad_uid != null && admitad_uid != undefined) {
+        //        $.cookie("admitad_uid", admitad_uid, { expires: 30, path: '/' });
+        //    }
+        //});
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+
+
+var invTagManagerParams = new Object();
+var ProductsCheckout = "";
+            
+                window.addEventListener('load', function () {
+                    if ("MainPage" == "Confirmation" && (document.referrer.indexOf('onepagecheckout') == -1 || performance.navigation.type == performance.navigation.TYPE_RELOAD)) {
+                        window.insider_object.page = { "type": "Other" }
+                    }
+                    else {
+                        window.insider_object.page = { "type": "MainPage" }
+                    }
+                });
+            
+
+        invTagManagerParams = {
+
+
+            Breadcrumb: "",
+            //page params
+            PageUrl : "https://www.colins.com.tr/",
+            PageType : "Home",
+            BrandName: "Colins",
+            //category params
+            CategoryId : "",
+            CategoryName: "",
+            IsCustomerFirstBuy: "True",
+
+            //cart and checkoutcomplete params
+            ProductCategoryIdList : "",
+            ProductIdList: "",
+
+
+
+
+            ProductIdListNew: [],
+
+            ProductSkuList : "",
+            ProductCartTotal : "",
+
+            //product params
+            ProductId : "",
+            ProductSku : "",
+            ProductName : "",
+            ProductPrice: "",
+            ProductValue: "0",
+            ProductCurrency: "TRY",
+
+            //customer params
+            CustomerId : "277851013",
+            CustomerName : "",
+            CustomerFirstName : "",
+            CustomerLastName : "",
+            CustomerPhone : "",
+            CustomerEmail : "",
+            CustomerCreatedDate : "2021-10-24 10:02:22",
+            CustomerLastLoginDate : "",
+            CustomerIsLoggedIn : "false",
+            CustomerGender : "",
+
+            //order params
+            OrderId : "",
+            OrderCreatedDate : "",
+            OrderShippingAmount : "",
+            OrderTotalAmount : "",
+            OrderTotalWithoutShippingAmount: "",
+            OrderCouponCode: ""
+        }
+
+    </script>
+
+
+    
+    <div id="fb-root">
+</div>
+<script>
+    
+
+    // Load the SDK Asynchronously
+    
+
+   /* $(document).ready(function () {
+
+        try {
+            FB.Event.subscribe('edge.create',
+            function (targetUrl) {
+                try {
+                    _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+                } catch (e) {
+                }
+            }
+        );
+
+            FB.Event.subscribe('edge.remove', function (targetUrl) {
+                try {
+                    _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+                } catch (e) {
+                }
+            });
+        } catch (e) {
+
+        }
+
+        $(".ico-logout").on("click", function () {
+            try {
+                FB.logout(function (response) {
+                    // user is now logged out
+                    _gaq.push(['_trackSocial', 'facebook', 'logout', targetUrl]);
+                });
+            } catch (e) {
+
+            }
+        });*/
+
+    //});
+</script>
+
+    <!--footer scripts-->
+    <script>
+    var btnName = 'Kapat';
+    var title = 'Bilgilendirme';
+</script>
+
+<script async src="/Themes/Branch/Content/js/footerScripts.js"></script>
+    <!--footer scripts-->
+
+</body>
+
+{% endblock  %}
