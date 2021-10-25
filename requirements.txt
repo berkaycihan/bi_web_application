@@ -4,5 +4,4 @@ Flask-WTF
 passlib
 email_validator
 gunicorn
-uwsgi
 wtforms
