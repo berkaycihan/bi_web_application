@@ -6,4 +6,3 @@ email_validator
 gunicorn
 wtforms
 validators
-passlib.hash
