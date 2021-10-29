@@ -1,9 +1,73 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <div class="jumbotron">
-
-    Reports
-    
+    <div class="container">
+    Türkiye
     </div>
+
+    <hr>
+
+    <div class="container">
+
+    <canvas id="chart" width="30" height="20"></canvas>
+    <script>
+    var chart = document.getElementById("chart").getContext('2d');
+    var myChart = new Chart(chart , {
+        type : 'pie',
+        data : {
+            labels : ['VIP müşteriler' , 'Yakın Vadede Gelen Değerli Müşteriler' , 'Orta Vadede Gelen Değerli Müşteriler' , 'Yakın Vadede Gelen Düşük Frekanslı Müşteriler' , 'Orta Vadede Gelen Düşük Frekanslı Müşteriler' , 
+            'Churn'],
+            datasets : [{
+                label : "Müşteri Segmentasyonu",
+                data : [59647,193326,217596,509730,361116,172876],
+                backgroundColor : [
+                    "#00ff00",
+                    "#00ee00",
+                    "#00cd00",
+                    "#008b00",
+                    "#006400",
+                    "#556b2f"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            { 
+                label : "Müşteri Segmentasyonu",
+                data :[59647,193326,217596,509730,361116,172876],
+                 backgroundColor : [
+                    "#00ff00",
+                    "#00ee00",
+                    "#00cd00",
+                    "#008b00",
+                    "#006400",
+                    "#556b2f"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            {
+                label : "Müşteri Segmentasyonu",
+                data :[59647,193326,217596,509730,361116,172876],
+                 backgroundColor : [
+                    "#00ff00",
+                    "#00ee00",
+                    "#00cd00",
+                    "#008b00",
+                    "#006400",
+                    "#556b2f"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            }
+            ] 
+        }
+    });
+    </script>
+    </div>
+
+    
+
 {% endblock  %}
