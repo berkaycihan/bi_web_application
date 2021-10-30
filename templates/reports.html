@@ -1,18 +1,21 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <div class="container">
-    Türkiye
-    </div>
 
+
+<div class="container">
+
+    <div class="row">
+
+
+        <div class="col" style="width:340px;height:240px">
+    <p>Türkiye</p>
     <hr>
-
-    <div class="chart-container" style="position: relative; height:20vh; width:40vw">
-
-    <canvas id="chart" width="30" height="20"></canvas>
+    <canvas id="chart5" width="300" height="200"></canvas>
     <script>
-    var chart = document.getElementById("chart").getContext('2d');
-    var myChart = new Chart(chart , {
+    var chart5 = document.getElementById("chart5").getContext('2d');
+    var myChart5 = new Chart(chart5 , {
+        
         type : 'pie',
         data : {
             labels : ['VIP müşteriler' , 'Yakın Vadede Gelen Değerli Müşteriler' , 'Orta Vadede Gelen Değerli Müşteriler' , 'Yakın Vadede Gelen Düşük Frekanslı Müşteriler' , 'Orta Vadede Gelen Düşük Frekanslı Müşteriler' , 
@@ -21,7 +24,80 @@
                 label : "Müşteri Segmentasyonu",
                 data : [59647,193326,217596,509730,361116,172876],
                 backgroundColor : [
-                    "#00ff00",
+                    "#FFCDD2",
+                    "#E57373",
+                    "#F44336",
+                    "#D32F2F",
+                    "#B71C1C",
+                    "#D50000"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            { 
+                label : "Müşteri Segmentasyonu",
+                data :[59647,193326,217596,509730,361116,172876],
+                 backgroundColor : [
+                    "#FFCDD2",
+                    "#E57373",
+                    "#F44336",
+                    "#D32F2F",
+                    "#B71C1C",
+                    "#D50000"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            {
+                label : "Müşteri Segmentasyonu",
+                data :[59647,193326,217596,509730,361116,172876],
+                 backgroundColor : [
+                    "#FFCDD2",
+                    "#E57373",
+                    "#F44336",
+                    "#D32F2F",
+                    "#B71C1C",
+                    "#D50000"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            }
+            ] 
+        }
+    });
+    </script>
+    </div>
+
+     </div>
+
+
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
+    <div class="row">
+    
+    <div class="col" style="width:340px;height:240px">
+
+    <p>Ukrayna</p>
+    <hr>
+
+    <canvas id="chart" width="30" height="20"></canvas>
+    <script>
+    var chart = document.getElementById("chart").getContext('2d');
+    var myChart = new Chart(chart , {
+        
+        type : 'pie',
+        data : {
+            labels : ['VIP müşteriler' , 'Yakın Vadede Gelen Değerli Müşteriler' , 'Orta Vadede Gelen Değerli Müşteriler' , 'Yakın Vadede Gelen Düşük Frekanslı Müşteriler' , 'Orta Vadede Gelen Düşük Frekanslı Müşteriler' , 
+            'Churn'],
+            datasets : [{
+                label : "Müşteri Segmentasyonu",
+                data : [35056,122662,120520,280277,155192,48050],
+                backgroundColor : [
+                    "#FFF8E1",
                     "#00ee00",
                     "#00cd00",
                     "#008b00",
@@ -34,9 +110,9 @@
             },
             { 
                 label : "Müşteri Segmentasyonu",
-                data :[59647,193326,217596,509730,361116,172876],
+                data :[35056,122662,120520,280277,155192,48050],
                  backgroundColor : [
-                    "#00ff00",
+                    "#FFF8E1",
                     "#00ee00",
                     "#00cd00",
                     "#008b00",
@@ -49,9 +125,9 @@
             },
             {
                 label : "Müşteri Segmentasyonu",
-                data :[59647,193326,217596,509730,361116,172876],
+                data :[35056,122662,120520,280277,155192,48050],
                  backgroundColor : [
-                    "#00ff00",
+                    "#FFF8E1",
                     "#00ee00",
                     "#00cd00",
                     "#008b00",
@@ -65,9 +141,220 @@
             ] 
         }
     });
+
+
+    </script>
+    </div>
+    
+
+    <div class="col" style="width:340px;height:240px">
+    <p>Rusya</p>
+    <hr>
+    <canvas id="chart2" width="300" height="200"></canvas>
+    <script>
+    var chart2 = document.getElementById("chart2").getContext('2d');
+    var myChart2 = new Chart(chart2 , {
+        
+        type : 'pie',
+        data : {
+            labels : ['VIP müşteriler' , 'Yakın Vadede Gelen Değerli Müşteriler' , 'Orta Vadede Gelen Değerli Müşteriler' , 'Yakın Vadede Gelen Düşük Frekanslı Müşteriler' , 'Orta Vadede Gelen Düşük Frekanslı Müşteriler' , 
+            'Churn'],
+            datasets : [{
+                label : "Müşteri Segmentasyonu",
+                data : [90164,296849,371797,595320,477800,138469],
+                backgroundColor : [
+                    "#FFF8E1",
+                    "#00BCD4",
+                    "#00ACC1",
+                    "#0097A7",
+                    "#00838F",
+                    "#006064"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            { 
+                label : "Müşteri Segmentasyonu",
+                data :[90164,296849,371797,595320,477800,138469],
+                 backgroundColor : [
+                    "#FFF8E1",
+                    "#00BCD4",
+                    "#00ACC1",
+                    "#0097A7",
+                    "#00838F",
+                    "#006064"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            {
+                label : "Müşteri Segmentasyonu",
+                data :[90164,296849,371797,595320,477800,138469],
+                 backgroundColor : [
+                    "#FFF8E1",
+                    "#00BCD4",
+                    "#00ACC10",
+                    "#0097A7",
+                    "#00838F",
+                    "#006064"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            }
+            ] 
+        }
+    });
     </script>
     </div>
 
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+    <div class="row">
     
+
+    <div class="col" style="width:340px;height:240px">
+    <p>Romanya</p>
+    <hr>
+    <canvas id="chart3" width="300" height="200"></canvas>
+    <script>
+    var chart3 = document.getElementById("chart3").getContext('2d');
+    var myChart3 = new Chart(chart3 , {
+        
+        type : 'pie',
+        data : {
+            labels : ['VIP müşteriler' , 'Yakın Vadede Gelen Değerli Müşteriler' , 'Orta Vadede Gelen Değerli Müşteriler' , 'Yakın Vadede Gelen Düşük Frekanslı Müşteriler' , 'Orta Vadede Gelen Düşük Frekanslı Müşteriler' , 
+            'Churn'],
+            datasets : [{
+                label : "Müşteri Segmentasyonu",
+                data : [1321,4302,4935,8194,11003,3015],
+                backgroundColor : [
+                     "#F3E5F5",
+                    "#E1BEE7",
+                    "#BA68C8",
+                    "#9C27B0",
+                    "#7B1FA2",
+                    "#4A148C"
+                   
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            { 
+                label : "Müşteri Segmentasyonu",
+                data :[1321,4302,4935,8194,11003,3015],
+                 backgroundColor : [
+                    "#F3E5F5",
+                    "#E1BEE7",
+                    "#BA68C8",
+                    "#9C27B0",
+                    "#7B1FA2",
+                    "#4A148C"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            {
+                label : "Müşteri Segmentasyonu",
+                data :[1321,4302,4935,8194,11003,3015],
+                 backgroundColor : [
+                    "#F3E5F5",
+                    "#E1BEE7",
+                    "#BA68C8",
+                    "#9C27B0",
+                    "#7B1FA2",
+                    "#4A148C"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            }
+            ] 
+        }
+    });
+
+
+    </script>
+    </div>
+
+    <div class="col" style="width:340px;height:240px">
+    <p>Belarus</p>
+    <hr>
+    <canvas id="chart4" width="300" height="200"></canvas>
+    <script>
+    var chart4 = document.getElementById("chart4").getContext('2d');
+    var myChart4 = new Chart(chart4 , {
+        
+        type : 'pie',
+        data : {
+            labels : ['VIP müşteriler' , 'Yakın Vadede Gelen Değerli Müşteriler' , 'Orta Vadede Gelen Değerli Müşteriler' , 'Yakın Vadede Gelen Düşük Frekanslı Müşteriler' , 'Orta Vadede Gelen Düşük Frekanslı Müşteriler' , 
+            'Churn'],
+            datasets : [{
+                label : "Müşteri Segmentasyonu",
+                data : [8147,28713,32512,50589,43971,15233],
+                backgroundColor : [
+                    "#FFF8E1",
+                    "#FFE082",
+                    "#FFCA28",
+                    "#FFB300",
+                    "#FF8F00",
+                    "#FF6F00"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            { 
+                label : "Müşteri Segmentasyonu",
+                data :[8147,28713,32512,50589,43971,15233],
+                 backgroundColor : [
+                    "#FFF8E1",
+                    "#FFE082",
+                    "#FFCA28",
+                    "#FFB300",
+                    "#FF8F00",
+                    "#FF6F00"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            },
+            {
+                label : "Müşteri Segmentasyonu",
+                data :[8147,28713,32512,50589,43971,15233],
+                 backgroundColor : [
+                    "#FFF8E1",
+                    "#FFE082",
+                    "#FFCA28",
+                    "#FFB300",
+                    "#FF8F00",
+                    "#FF6F00"
+                ],
+                borderColor : [
+                    '#000000'
+                ]
+            }
+            ] 
+        }
+    });
+    </script>
+    </div>
+
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+    
+
+
+    </div>
+    
+
+     
+</div>
 
 {% endblock  %}
