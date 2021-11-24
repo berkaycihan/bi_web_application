@@ -1,5 +1,5 @@
 # bi_web_application
-Flask Framework app
+Flask Web Framework app
 
 
 
